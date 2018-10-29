@@ -5,4 +5,8 @@ module.exports = {
     client: 'pg',
     connection: 'postgres://localhost/friendly-forum',
   },
+  production: {
+    client: 'pg',
+    connection: process.env.DATABASE_URL,
+  },
 };
